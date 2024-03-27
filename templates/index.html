@@ -1,0 +1,118 @@
+{% extends "base.html" %} {% block content %}
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    section {
+      background-color: #00d1b2;
+      height: 380px;
+    }
+    h1 {
+      color: white;
+    }
+    h2 {
+      font-family: "Dancing Script", cursive;
+      margin-top: 80px;
+      font-size: 40px;
+    }
+    p {
+      margin-top: 20px;
+      width: 400px;
+      line-height: 20px;
+    }
+    .banner {
+      display: flex;
+    }
+    .col1 {
+      flex: 1;
+      height: 400px;
+      padding: 30px;
+    }
+    .col {
+      flex: 1;
+      height: 400px;
+    }
+    .col img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .col p {
+      line-height: 30px;
+    }
+  </style>
+</head>
+<!-- Navigation code -->
+<nav id="navbar" class="nav-bar-white">
+  <ul class="navlinks">
+    <li><a href="#" class="active">Laundry</a></li>
+    <li><a href="#">Full Package</a></li>
+    <li><a href="#">Domestic Worker</a></li>
+  </ul>
+  <a href="registration.html" class="register">Register</a>
+  <i class="fas fa-bars" onclick="togglebtn()"></i>
+</nav>
+<!-- End of Navigation -->
+<section>
+  <h1 class="title">TaskMe</h1>
+  <h2 class="subtitle">Welcome to TaskMe! <br />Happy to have you on board!</h2>
+  <p>
+    Whether you're a seasoned professional or just starting out, FindMe empowers
+    you to discover opportunities that match your skills, passions, and
+    aspirations.
+  </p>
+</section>
+
+{% endblock %}
+<div class="banner">
+  <div class="col1">
+    <h2>
+      Join the <br />
+      FindMe Community
+    </h2>
+    <p>
+      Join thousands of professionals who have already found success with
+      FindMe. Whether you're seeking career advice, networking opportunities, or
+      simply want to share your experiences, our vibrant community is here to
+      support you every step of the way. Together, we'll elevate your career to
+      new heights.
+    </p>
+  </div>
+  <div class="col">
+    <img src="../static/images/cleaningimage.jpg" alt="" />
+  </div>
+</div>
+<hr style="margin: 30px 0" />
+<div class="footer">
+  <div class="btn">
+    <div class="icon">
+      <i href="facebook.com" class="fa fa-facebook" aria-hidden="true"></i>
+    </div>
+    <span>Facebook</span>
+  </div>
+  <div class="btn">
+    <div class="icon">
+      <i href="x.com" class="fa fa-twitter" aria-hidden="true"></i>
+    </div>
+    <span>X</span>
+  </div>
+  <div class="btn">
+    <div class="icon">
+      <i href="instagram.com" class="fa fa-instagram" aria-hidden="true"></i>
+    </div>
+    <span>Instagram</span>
+  </div>
+  <div class="btn">
+    <div class="icon">
+      <i href="youtube.com" class="fa fa-youtube" aria-hidden="true"></i>
+    </div>
+    <span>Youtube</span>
+  </div>
+</div>
